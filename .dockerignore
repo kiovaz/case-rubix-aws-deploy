@@ -1,0 +1,32 @@
+# Docker
+.env
+docker-compose.override.yml
+*.log
+
+# Node modules
+node_modules
+**/node_modules
+
+# Databases
+*.db
+*.sqlite
+
+# Build outputs
+dist
+.next
+out
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore

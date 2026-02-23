@@ -61,7 +61,7 @@ export default function BookRegister() {
     };
 
     try {
-      const res = await fetch("http://localhost:3333/livros", {
+      const res = await fetch("/api/livros", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(novoLivro),

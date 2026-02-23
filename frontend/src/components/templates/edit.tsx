@@ -24,7 +24,7 @@ export default function BookEdit() {
   useEffect(() => {
     if (!id) return;
 
-    fetch(`http://localhost:3333/livros/${id}`)
+    fetch(`/api/livros/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setFormData({
@@ -85,7 +85,7 @@ export default function BookEdit() {
     };
 
     try {
-      const res = await fetch(`http://localhost:3333/livros/${id}`, {
+      const res = await fetch(`/api/livros/${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(livroAtualizado),

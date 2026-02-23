@@ -11,7 +11,7 @@ export default function HomePage() {
   const [erro, setErro] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("http://localhost:3333/")
+    fetch("/api/")
       .then((res) => res.json())
       .then((data) => setMensagem(data.message))
       .catch(() => setErro("Não foi possível conectar com a API."));

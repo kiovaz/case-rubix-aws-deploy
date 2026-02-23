@@ -49,7 +49,7 @@ export default function ListBooks() {
 
   const carregarTodos = () => {
     setLoading(true);
-    fetch("http://localhost:3333/livros")
+    fetch("/api/livros")
       .then((res) => res.json())
       .then((data) => {
         setLivros(data);
